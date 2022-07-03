@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import { ThreeDots } from 'react-loader-spinner';
+import { TailSpin } from 'react-loader-spinner';
 
-export default function Loading({ height, width }) {
+export default function Loading({ height, width, marginLeft }) {
   return (
-    <ContainerLoading>
-      <ThreeDots color="#FF4" height={height} width={width} />
+    <ContainerLoading marginLeft={marginLeft}>
+      <TailSpin color="#892182" height={height} width={width} />
     </ContainerLoading>
   );
 }
@@ -14,5 +14,7 @@ const ContainerLoading = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 20px;
+  height: 100%;
+
+  margin-left: ${props => props.marginLeft};
 `;

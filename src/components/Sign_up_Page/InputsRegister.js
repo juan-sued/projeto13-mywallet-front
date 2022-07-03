@@ -29,12 +29,10 @@ export default function InputsRegister() {
     event.preventDefault();
 
     if (inputConfirmPassword !== inputPassword) {
-      console.log('A confirmação de senha está diferente');
       setInputConfirmPassword('');
       setStateButton('passwordNoEquals');
       return;
     }
-    console.log('passou e as senhas são:', inputConfirmPassword, inputPassword);
     setStateButton('loading');
     // ===
     objNewRegister.email = inputEmail;

@@ -6,6 +6,7 @@ import iconExit from '../../assets/iconExit.svg';
 import RegisterTransactions from './RegisterTransactions';
 import UserContext from '../../contexts/UserContext';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 export default function Home_Page() {
   const { objHomeResponse, objLoginResponse } = useContext(UserContext);
 
@@ -14,7 +15,9 @@ export default function Home_Page() {
       <Header
         title={objHomeResponse === null ? '' : `Olá, ${objLoginResponse.user.name}`}
       >
-        <img src={iconExit} alt="a" />
+        <Link to="/">
+          <img src={iconExit} alt="a" />
+        </Link>
       </Header>
       <RegisterTransactions />
       <NavigateMenu />

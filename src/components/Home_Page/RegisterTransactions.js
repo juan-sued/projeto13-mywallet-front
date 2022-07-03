@@ -58,7 +58,7 @@ export default function RegisterTransactions() {
       <span className="balanceView">
         <p className="balance">Saldo:</p>
         {objHomeResponse === null ? (
-          <Loading />
+          <Loading height={20} width={20} marginLeft={'180px'} />
         ) : (
           <p
             className={
@@ -76,7 +76,8 @@ export default function RegisterTransactions() {
 const Transaction_Style = styled.span`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 23px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   div.container {
     display: flex;
@@ -113,13 +114,13 @@ const RegisterTransactions_Style = styled.div`
   width: 88%;
   height: 440px;
   margin-bottom: 140px;
-  padding: 23px 12px 20px 12px;
+  padding: 0px 12px 20px 12px;
 
   div.containerTransactions {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 380px;
+    height: 400px;
   }
 
   span.balanceView {
