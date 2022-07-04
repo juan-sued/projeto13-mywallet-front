@@ -26,7 +26,7 @@ export default function RegisterTransactions() {
   const config = {
     headers: objLoginResponse.headers
   };
-
+  console.log(config);
   useEffect(() => {
     const promise = axios.get(URL, config);
     promise.then(response => {
