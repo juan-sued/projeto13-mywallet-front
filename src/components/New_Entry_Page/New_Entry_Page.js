@@ -95,7 +95,7 @@ export default function New_Entry_Page() {
               disabled={stateButton === 'loading' ? 'disabled' : ''}
             >
               {stateButton === 'err' ? (
-                'Email ou/e senha inválido(s)!'
+                'Transação inválida!'
               ) : stateButton === 'loading' ? (
                 <ContainerLoading>
                   <ThreeDots color="white" height={40} width={40} />

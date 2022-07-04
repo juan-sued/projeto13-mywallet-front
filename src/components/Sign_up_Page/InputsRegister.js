@@ -48,6 +48,7 @@ export default function InputsRegister() {
       navigate('../', { replace: true });
     });
     promise.catch(err => {
+      console.log('esse é o erro:', err);
       setStateButton('err');
     });
     setInputEmail('');
