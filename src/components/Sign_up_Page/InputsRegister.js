@@ -21,7 +21,7 @@ export default function InputsRegister() {
     password: ''
   });
 
-  const URL = 'http://localhost:5000/sign-up';
+  const URL = 'https://p13-mywallet.herokuapp.com/sign-up';
 
   const [stateButton, setStateButton] = useState('habilitado');
 

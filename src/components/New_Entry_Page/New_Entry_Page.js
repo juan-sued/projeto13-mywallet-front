@@ -11,7 +11,7 @@ import UserContext from '../../contexts/UserContext';
 
 export default function New_Entry_Page() {
   const { objLoginResponse } = useContext(UserContext);
-  const URL = 'http://localhost:5000/transactions/entry';
+  const URL = 'https://p13-mywallet.herokuapp.com/transactions/entry';
   const navigate = useNavigate();
   const [stateButton, setStateButton] = useState('habilitado');
 

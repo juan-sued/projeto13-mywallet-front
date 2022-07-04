@@ -22,7 +22,7 @@ export default function RegisterTransactions() {
   const { objLoginResponse, objHomeResponse, setObjHomeResponse } =
     useContext(UserContext);
 
-  const URL = 'http://localhost:5000/home';
+  const URL = 'https://p13-mywallet.herokuapp.com/home';
   const config = {
     headers: objLoginResponse.headers
   };

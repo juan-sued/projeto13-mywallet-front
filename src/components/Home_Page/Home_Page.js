@@ -1,5 +1,4 @@
 import Main from '../../shared/Main';
-import styled from 'styled-components';
 import NavigateMenu from './NavigateMenu';
 import Header from '../../shared/Header';
 import iconExit from '../../assets/iconExit.svg';

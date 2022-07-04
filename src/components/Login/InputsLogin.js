@@ -11,7 +11,7 @@ import axios from 'axios';
 //import axios
 
 export default function InputsLogin() {
-  const URL = 'http://localhost:5000/';
+  const URL = 'https://p13-mywallet.herokuapp.com/';
 
   const { setObjLoginResponse } = useContext(UserContext);
 
@@ -43,7 +43,7 @@ export default function InputsLogin() {
       navigate('../home', { replace: true });
     });
     promise.catch(err => {
-      console.log(err.response.data);
+      console.log(err.response);
       setStateButton('err');
     });
     setInputEmail('');
